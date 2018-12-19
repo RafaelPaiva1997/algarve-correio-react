@@ -4,6 +4,7 @@
     border-style: solid;
     margin: 0.5vw;
     width: 8vw;
+    cursor: pointer;
 }
 
 .red-legend {
@@ -16,10 +17,25 @@
     background: none;
     outline: none;
     width: 100%;
-    font-size: 1vw;
+    font-size: 0.9vw;
 }
 
-#controlled-form, .black-box {
+.big-fieldset {
+    margin: 0.7vw;
+}
+
+.big-input {
+    width: 20vw;
+    height: 2vw;
+    font-size: 1.1vw;
+}
+
+.big-legend {
+    font-size: 1.2vw;
+}
+
+#controlled-form,
+#controlled-search {
     background-color: var(--text-white);
     border-radius: 2vw;
     margin: 1vw;
@@ -42,4 +58,9 @@
 #add-button:hover {
     color: var(--text-white);
     background-color: var(--hover-blue);
+}
+
+#detalhes-email {
+    margin: 0;
+    margin-top: 1vw;
 }

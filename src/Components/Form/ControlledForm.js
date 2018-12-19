@@ -10,8 +10,9 @@ export default class ControlledForm extends React.Component {
     }
 
     render() {
-        return (<div id="controlled-form" className="dis-flex-col dis-flex-align">
-            {this.props.fields.map(e => (
+        return (
+            <div id="controlled-form" className="dis-flex-col dis-flex-align">
+                {this.props.fields.map(e => (
                     <ControlledInput
                         key={e.var}
                         ref={this.rfs[e.var]}
@@ -23,7 +24,8 @@ export default class ControlledForm extends React.Component {
                         text={e.legend}
                     />
                 ))}
-            <div id="add-button">Adicionar Email</div>
-        </div>);
+                <div id="add-button">Adicionar Email</div>
+            </div>
+        );
     }
 }

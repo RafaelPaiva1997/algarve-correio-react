@@ -3,6 +3,11 @@
     margin-right: 0.5vw;
 }
 
+.td-space-after::after {
+    content: "";
+    margin-left: 0.5vw;
+}
+
 /******************************/
 
 .brd-bot {
@@ -14,7 +19,7 @@
 }
 
 .brd-round {
-    border: solid 0.08vw var(--text-blue);
+    border: solid 0.1vw var(--text-blue);
     border-radius: 0.5vw;
     padding: 0.3vw;
 }
@@ -31,6 +36,11 @@
     margin: 1vw;
     margin-bottom: 0.2vw;
     margin-top: 0.2vw;
+    cursor: pointer;
+}
+
+#account:hover {
+    background-color: var(--hover-blue)
 }
 
 #account-list {

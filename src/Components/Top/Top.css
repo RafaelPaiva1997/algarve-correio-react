@@ -1,3 +1,7 @@
+#account-list {
+    padding-top: 1vw;
+}
+
 #nav-bar {
     position: fixed;
     left: 84vw;
@@ -6,3 +10,15 @@
     background-color: var(--text-blue);
     border-left: solid 0.2vw var(--text-black);
 }
+
+#email-info {
+    position: fixed;
+    top: 9vw;
+    left: 29vw;
+    width: 25vw;
+    padding-bottom: 1vw;
+    border: solid 0.2vw var(--text-black);
+    border-radius: 2vw;
+    background-color: var(--text-white);
+}
+
