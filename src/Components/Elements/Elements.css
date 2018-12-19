@@ -1,0 +1,58 @@
+.td-space-before::before {
+    content: "";
+    margin-right: 0.5vw;
+}
+
+/******************************/
+
+.brd-bot {
+    border-bottom: solid 0.1vw var(--text-black);
+}
+
+.brd-right {
+    border-right: solid 0.1vw var(--text-black);
+}
+
+.brd-round {
+    border: solid 0.08vw var(--text-blue);
+    border-radius: 0.5vw;
+    padding: 0.3vw;
+}
+
+/******************************/
+
+.font-info {
+    font-family: sans-serif;
+}
+
+/******************************/
+
+#account {
+    margin: 1vw;
+    margin-bottom: 0.2vw;
+    margin-top: 0.2vw;
+}
+
+#account-list {
+    width: 84vw;
+    height: 100%;
+}
+
+#nav-button {
+    height: 3vw;
+    width: 10vw;
+    font-family: dark, sans-serif;
+    font-size: 1.2vw;
+    border-radius: 1vw;
+    margin: 0.5vw;
+    color: var(--hover-blue);
+    border: solid 0.2vw black;
+    box-shadow: var(--shadow-blue) 0.2vw 0.4vw;
+    background-color: var(--text-white);
+    cursor: pointer;
+}
+
+#nav-button:hover {
+    color: var(--text-white);
+    background-color: var(--hover-blue);
+}

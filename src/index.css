@@ -1,0 +1,82 @@
+:root {
+  --text-black: black;
+  --text-white: white;
+  --text-blue: #0d80c2;
+
+  --shadow-blue: #0e4e74;
+  --hover-blue: #5faedb;
+  
+  --transparent: rgba(255,255,255,0.9);
+}
+
+@font-face {
+  font-family: light;
+  src: url(light.woff);
+}
+
+@font-face {
+  font-family: dark;
+  src: url(bold.woff);
+}
+
+body {
+  font-family: light, sans-serif;
+  background-image: url(https://i.imgur.com/MOusKYj.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.dis-flex, .dis-flex-col, .dis-flex-align, .dis-flex-justify {
+  display: flex;  
+}
+
+.dis-flex-col {
+  flex-direction: column;
+}
+
+.dis-flex-align {
+  align-items: center;
+}
+
+.dis-flex-justify {
+  justify-content: center;
+}
+
+/******************************/
+
+.text-xs {
+  font-size: 1vw;
+}
+
+.text-sm {
+  font-size: 1.2vw
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/******************************/
+
+.he-2 {
+  height: 2vw;
+}
+
+/******************************/
+
+.td-3 {
+  width: 33.33%;
+}
+
+/******************************/
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--transparent);
+}
+

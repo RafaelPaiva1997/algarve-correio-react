@@ -1,0 +1,45 @@
+.red-fieldset {
+    border-color: var(--hover-blue);
+    border-radius: 0.8vw;
+    border-style: solid;
+    margin: 0.5vw;
+    width: 8vw;
+}
+
+.red-legend {
+    color: var(--text-blue);
+}
+
+.transparent-input {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    font-size: 1vw;
+}
+
+#controlled-form, .black-box {
+    background-color: var(--text-white);
+    border-radius: 2vw;
+    margin: 1vw;
+    padding: 0.7vw;
+    border: solid 0.2vw var(--text-black);
+    box-shadow: var(--shadow-blue) 0.2vw 0.4vw;
+}
+
+#add-button {
+    text-align: center;
+    font-size: 1.2vw;
+    margin: 0.5vw;
+    padding: 0.6vw;
+    border-radius: 0.8vw;
+    color: var(--text-blue);
+    border: solid 0.15vw var(--text-black);
+    cursor: pointer;
+}
+
+#add-button:hover {
+    color: var(--text-white);
+    background-color: var(--hover-blue);
+}
