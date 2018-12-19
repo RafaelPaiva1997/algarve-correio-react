@@ -20,7 +20,7 @@ export default class ControlledSearch extends React.Component {
                     text="E-Mail"
                     pr
                 />
-                <div id="add-button">Procurar Email</div>
+                <div id="add-button">Procurar</div>
             </div>
         );
     }

@@ -24,7 +24,7 @@ export default class ControlledForm extends React.Component {
                         text={e.legend}
                     />
                 ))}
-                <div id="add-button">Adicionar Email</div>
+                <div id="add-button">Adicionar</div>
             </div>
         );
     }

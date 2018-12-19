@@ -47,12 +47,14 @@
 #add-button {
     text-align: center;
     font-size: 1.2vw;
+    font-family: dark;
     margin: 0.5vw;
     padding: 0.6vw;
     border-radius: 0.8vw;
-    color: var(--text-blue);
+    color: var(--hover-blue);
     border: solid 0.15vw var(--text-black);
     cursor: pointer;
+    box-shadow: var(--text-grey) 0.3vw 0.3vw;
 }
 
 #add-button:hover {
