@@ -4,39 +4,51 @@ import AutoFetch from "../../AutoFetch/AutoFetch";
 import Account from "../Elements/Account";
 
 export default class AccountList extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {items: null};
+    this.state = { items: null };
 
-        this.update = this.update.bind(this);
-    }
+    this.update = this.update.bind(this);
+  }
 
-    componentWillMount() {
-        this.update();
-    }
+  componentWillMount() {
+    this.update();
+  }
 
-    update() {
-        AutoFetch.post("emails", "find", {
-            key: {...{
-                mailingList: this.props.mailingList
-            }, ...this.props.findKey}
-        }, res => this.setState({items: res}))
-    }
+  update() {
+    AutoFetch.post(
+      "emails",
+      "find",
+      {
+        key: {
+          ...{
+            mailingList: this.props.mailingList
+          },
+          ...this.props.findKey
+        }
+      },
+      res => this.setState({ items: res })
+    );
+  }
 
-    componentWillReceiveProps(props) {
-        this.props = props;
-        this.setState({items: null});
-        this.update();
-    }
+  componentWillReceiveProps(props) {
+    this.props = props;
+    this.setState({ items: null });
+    this.update();
+  }
 
-    render() {
-        return (
-            <div id="account-list" className="dis-flex-col">
-                {!this.props.loading && this.state.items ? this.state.items.map(e => (
-                    <Account key={e.email} item={e} {...this.props} />
-                )) : <Loading />}
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div id="account-list" className="dis-flex-col">
+        {!this.props.loading && this.state.items ? (
+          this.state.items.map(e => (
+            <Account key={e.email} item={e} {...this.props} />
+          ))
+        ) : (
+          <Loading />
+        )}
+      </div>
+    );
+  }
 }

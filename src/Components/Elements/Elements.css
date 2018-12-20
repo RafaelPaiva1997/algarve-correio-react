@@ -40,7 +40,8 @@
 }
 
 #account:hover {
-    background-color: var(--hover-blue)
+    border-color: var(--text-black);
+    background-color: var(--hover-blue);
 }
 
 #account-list {

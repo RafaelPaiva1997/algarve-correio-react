@@ -31,6 +31,7 @@ export default class EmailInfo extends React.Component {
       () => {this.props.clear(false); this.props.select(null)}
     );
   }
+  
 
   remove() {
     this.props.clear(true);

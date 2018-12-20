@@ -37,12 +37,13 @@ input::placeholder, textarea::placeholder {
 input, textarea {
     font-family: light, sans-serif;
     font-size: 0.9vw;
-    padding: 0.5vw;
+    padding: 0.2vw;
     padding-top: 0.1vw;
 }
 
 input {
     height: 1.5vw;
+    width: 8vw;
 }
 
 h1 {
