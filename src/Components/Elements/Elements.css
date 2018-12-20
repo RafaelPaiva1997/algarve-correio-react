@@ -48,7 +48,7 @@
     height: 100%;
 }
 
-#nav-button {
+#nav-button, #list-picker {
     height: 3vw;
     width: 10vw;
     font-family: dark, sans-serif;
