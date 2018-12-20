@@ -1,0 +1,53 @@
+#shutdown-screen {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 99.3vw;
+    height: 100vh;
+    background-color: var(--transparent-black);
+}
+
+#send-mail-title {
+    margin: 1vw;
+    color: var(--text-blue);
+    text-align: left;
+}
+
+#send-mail-title-div {
+    width: 95%;
+    margin-right: 1vw;
+    justify-content: space-around;
+}
+
+#template-button {
+    width: 5vw;
+}
+
+#send-mail {
+    position: fixed;
+    top: 9vw;
+    left: 20vw;
+    width: 50vw;
+    padding-bottom: 1vw;
+    border: solid 0.2vw var(--text-black);
+    border-radius: 2vw;
+    background-color: var(--text-white);
+}
+
+#email-area {
+    appearance: none;
+    outline: none;
+    resize: none;
+    border: none;
+    height: 12vw;
+    margin-bottom: 0;
+}
+
+#subject-fieldset, #email-area {
+    width: 40vw;
+}
+
+.list-picker-mail {
+    box-shadow: var(--text-grey) 0.3vw 0.3vw !important;
+    border: solid 0.15vw var(--text-black) !important;
+}

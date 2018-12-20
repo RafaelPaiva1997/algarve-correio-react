@@ -3,12 +3,13 @@
     border-radius: 0.8vw;
     border-style: solid;
     margin: 0.5vw;
-    width: 8vw;
     cursor: pointer;
 }
 
 .red-legend {
     color: var(--text-blue);
+    font-size: 1vw;
+    margin-left: 0.5vw;
 }
 
 .transparent-input {
@@ -16,8 +17,7 @@
     border: none;
     background: none;
     outline: none;
-    width: 100%;
-    font-size: 0.9vw;
+    width: 8vw;
 }
 
 .big-fieldset {
@@ -44,7 +44,7 @@
     box-shadow: var(--shadow-blue) 0.2vw 0.4vw;
 }
 
-#add-button {
+.add-button {
     text-align: center;
     font-size: 1.2vw;
     font-family: dark;
@@ -57,7 +57,7 @@
     box-shadow: var(--text-grey) 0.3vw 0.3vw;
 }
 
-#add-button:hover {
+.add-button:hover {
     color: var(--text-white);
     background-color: var(--hover-blue);
 }

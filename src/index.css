@@ -26,6 +26,27 @@ body {
     background-image: url(https://i.imgur.com/MOusKYj.jpg);
     background-repeat: repeat-y;
     background-size: contain;
+    user-select: none;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: light, sans-serif;
+    font-size: 0.9vw;
+}
+
+input, textarea {
+    font-family: light, sans-serif;
+    font-size: 0.9vw;
+    padding: 0.5vw;
+    padding-top: 0.1vw;
+}
+
+input {
+    height: 1.5vw;
+}
+
+h1 {
+    font-size: 2vw;
 }
 
 .dis-flex,

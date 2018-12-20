@@ -25,12 +25,12 @@ export default class ControlledSearch extends React.Component {
           fieldset="red-fieldset"
           legend="red-legend"
           placeholder="Escreva aqui"
-          text="E-Mail"
+          text="Email"
         />
         {this.props.loading ? (
           <Loading />
         ) : (
-          <div id="add-button" onClick={this.onClick}>
+          <div className="add-button" onClick={this.onClick}>
             Procurar
           </div>
         )}

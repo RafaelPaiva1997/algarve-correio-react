@@ -61,11 +61,11 @@ export default class EmailInfo extends React.Component {
             <Loading />
           ) : (
             <div class="dis-flex">
-              <div id="add-button"  onClick={this.update}>Actualizar</div>
-              <div id="add-button" onClick={this.remove}>
+              <div className="add-button"  onClick={this.update}>Actualizar</div>
+              <div className="add-button" onClick={this.remove}>
                 Remover
               </div>
-              <div id="add-button" onClick={() => this.props.select(null)}>
+              <div className="add-button" onClick={() => this.props.select(null)}>
                 Fechar
               </div>
             </div>
