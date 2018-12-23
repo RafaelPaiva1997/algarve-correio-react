@@ -17,14 +17,14 @@ export default class SendMail extends React.Component {
     return (
       <div id="shutdown-screen">
         <div id="send-mail" className="dis-flex-col dis-flex-align">
-          <div id="send-mail-title-div" class="dis-flex dis-flex-align">
+          <div id="send-mail-title-div" className="dis-flex dis-flex-align">
             <h1 id="send-mail-title">Enviar Email</h1>
             <ListPicker
               className="list-picker-mail"
               value={this.state.mailingList}
               onSelect={e => this.setState({ mailingList: e })}
             />
-            <div class="dis-flex dis-flex-align">
+            <div className="dis-flex dis-flex-align">
               <div
                 className="add-button"
                 onClick={() => alert("Email Enviado")}
