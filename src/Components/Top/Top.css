@@ -1,8 +1,9 @@
 .black-background {
     position: fixed;
-    width: 84vw;
+    width: calc(100vw - 200px);
     height: 100vh;
     background-color: var(--transparent-black);
+    z-index: 50;
 }
 
 #account-list {
@@ -10,22 +11,25 @@
 }
 
 #nav-bar {
-    position: fixed;
-    left: 84vw;
-    width: 15vw;
-    height: 100vh;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    min-height: 100vh;
     background-color: var(--text-blue);
     border-left: solid 0.2vw var(--text-black);
 }
 
 #email-info {
     position: fixed;
-    top: 9vw;
-    left: 29vw;
-    width: 25vw;
-    padding-bottom: 1vw;
-    border: solid 0.2vw var(--text-black);
-    border-radius: 2vw;
+    top: 20px;
+    left: 20px;
+    min-width: 320px;
+    padding-bottom: 10px;
+    border: solid 2px var(--text-black);
+    border-radius: 20px;
     background-color: var(--text-white);
 }
 
+#detalhes-email {
+    font-size: 20px;
+}

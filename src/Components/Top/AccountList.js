@@ -10,23 +10,32 @@ export default class AccountList extends Component {
     this.state = { items: null };
 
     this.update = this.update.bind(this);
+    this.getItems = this.getItems.bind(this);
+    
+    global.getItems = this.getItems;
   }
 
   componentWillMount() {
     this.update();
   }
 
+  getItems() {
+    return this.state.items;
+  }
+
   update() {
-    AutoFetch.post(
+    !this.props.selected && AutoFetch.post(
       "emails",
-      "find",
+      "findLimited",
       {
         key: {
           ...{
             mailingList: this.props.mailingList
           },
           ...this.props.findKey
-        }
+        },
+        inf: 0,
+        sup: 1000
       },
       res => this.setState({ items: res })
     );

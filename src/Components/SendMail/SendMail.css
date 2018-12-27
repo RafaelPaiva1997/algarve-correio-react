@@ -25,8 +25,8 @@
 
 #send-mail {
     position: fixed;
-    top: 9vw;
-    left: 20vw;
+    top: 1vw;
+    left: 1vw;
     width: 50vw;
     padding-bottom: 1vw;
     border: solid 0.2vw var(--text-black);
@@ -39,8 +39,15 @@
     outline: none;
     resize: none;
     border: none;
-    height: 12vw;
+    height: 12vw !important;
     margin-bottom: 0;
+}
+
+#template-holder {
+    position: fixed;
+    top: 1vw;
+    left: 52vw;
+    overflow: hidden;
 }
 
 #subject-fieldset, #email-area {
@@ -50,4 +57,8 @@
 .list-picker-mail {
     box-shadow: var(--text-grey) 0.3vw 0.3vw !important;
     border: solid 0.15vw var(--text-black) !important;
+}
+
+.email-fieldset {
+    height: auto !important;
 }

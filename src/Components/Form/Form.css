@@ -1,15 +1,18 @@
 .red-fieldset {
     border-color: var(--hover-blue);
-    border-radius: 0.8vw;
+    border-radius: 10px;
+    border-width: 2px;
     border-style: solid;
-    margin: 0.5vw;
+    margin: 5px;
+    width: 100px;
+    height: 35px;
     cursor: pointer;
 }
 
 .red-legend {
     color: var(--text-blue);
-    font-size: 1vw;
-    margin-left: 0.5vw;
+    font-size: 13px;
+    margin-left: 3px;
 }
 
 .transparent-input {
@@ -17,31 +20,47 @@
     border: none;
     background: none;
     outline: none;
-    width: 8vw;
+    width: 90px;
+    height: 20px;
+}
+
+.button-fixed {
+    width: 80px !important;
+    height: 20px !important;
+    font-size: 15px !important;
+    margin: 5px !important;
+    padding: 5px !important;
+    border-radius: 10px !important;
 }
 
 .big-fieldset {
-    margin: 0.7vw;
+    margin: 7px !important;
 }
 
 .big-input {
-    width: 20vw;
-    height: 2vw;
-    font-size: 1.1vw;
+    width: 250px !important;
+    height: 20px !important;
+    font-size: 11px !important;
 }
 
 .big-legend {
-    font-size: 1.2vw;
+    font-size: 12px !important;
 }
 
 #controlled-form,
 #controlled-search {
     background-color: var(--text-white);
-    border-radius: 2vw;
-    margin: 1vw;
-    padding: 0.7vw;
-    border: solid 0.2vw var(--text-black);
-    box-shadow: var(--shadow-blue) 0.2vw 0.4vw;
+    border-radius: 20px;
+    margin: 10px;
+    height: 235px;
+    width: 150px;
+    padding: 7px;
+    border: solid 2px var(--text-black);
+    box-shadow: var(--shadow-blue) 3px 5px;
+}
+
+#controlled-search {
+    height: 105px !important;
 }
 
 .add-button {
@@ -52,9 +71,9 @@
     padding: 0.6vw;
     border-radius: 0.8vw;
     color: var(--hover-blue);
-    border: solid 0.15vw var(--text-black);
+    border: solid 2px var(--text-black);
     cursor: pointer;
-    box-shadow: var(--text-grey) 0.3vw 0.3vw;
+    box-shadow: var(--text-grey) 3px 4px;
 }
 
 .add-button:hover {
@@ -69,8 +88,10 @@
 
 #list-picker {
     font-family: light, sans-serif !important;
-    width: 13vw !important;
-    font-size: 1vw !important;
-    padding: 0.5vw !important;
+    width: 170px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+    padding: 5px !important;
+    box-shadow: var(--shadow-blue) 3px 5px !important;
     outline: none;
 }

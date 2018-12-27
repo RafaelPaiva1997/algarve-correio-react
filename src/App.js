@@ -55,6 +55,7 @@ class App extends Component {
         <AccountList
           findKey={this.state.findKey}
           loading={this.loading}
+          selected={this.state.selected}
           select={this.select}
           mailingList={this.state.mailingList}
         />

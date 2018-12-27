@@ -50,7 +50,7 @@ export default class ControlledForm extends React.Component {
         {this.props.loading ? (
           <Loading />
         ) : (
-          <div className="add-button" onClick={this.add}>
+          <div className="add-button button-fixed" onClick={this.add}>
             Adicionar
           </div>
         )}

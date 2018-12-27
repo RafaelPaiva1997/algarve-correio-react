@@ -31,14 +31,14 @@ body {
 
 input::placeholder, textarea::placeholder {
     font-family: light, sans-serif;
-    font-size: 0.9vw;
+    font-size: 10px;
 }
 
 input, textarea {
     font-family: light, sans-serif;
-    font-size: 0.9vw;
-    padding: 0.2vw;
-    padding-top: 0.1vw;
+    font-size: 10px;
+    padding: 2px;
+    padding-top: 1px;
 }
 
 input {

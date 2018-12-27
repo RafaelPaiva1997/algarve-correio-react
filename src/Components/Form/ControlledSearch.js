@@ -12,7 +12,7 @@ export default class ControlledSearch extends React.Component {
   }
 
   onClick() {
-    this.props.updateKey({ email: { $regex: this.search.current.getValue() } });
+    if(this.search.current.getValue()) this.props.updateKey({ email: { $regex: this.search.current.getValue() } });
   }
 
   render() {
@@ -30,7 +30,7 @@ export default class ControlledSearch extends React.Component {
         {this.props.loading ? (
           <Loading />
         ) : (
-          <div className="add-button" onClick={this.onClick}>
+          <div className="add-button button-fixed" onClick={this.onClick}>
             Procurar
           </div>
         )}
