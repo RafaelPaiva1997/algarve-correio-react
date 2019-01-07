@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "url": "http://127.0.0.1:8080/api"
+=======
+    "url": "http://bc0b2090.ngrok.io/api"
+>>>>>>> 6bc0805390cf2a9b0f7614ba871f7d223fb897c3
 }
