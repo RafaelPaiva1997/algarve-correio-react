@@ -11,7 +11,7 @@
 }
 
 #nav-bar {
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 200px;
     min-height: 100vh;

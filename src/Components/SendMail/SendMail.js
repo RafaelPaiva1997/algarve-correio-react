@@ -50,7 +50,6 @@ export default class SendMail extends React.Component {
               value={this.state.mailingList}
               onSelect={e => this.setState({ mailingList: e })}
             />
-<<<<<<< HEAD
             {this.state.loading ? (
               <Loading />
             ) : (
@@ -73,21 +72,6 @@ export default class SendMail extends React.Component {
                 >
                   Fechar
                 </div>
-=======
-            <div className="dis-flex dis-flex-align">
-              <div
-                className="add-button"
-                onClick={() => alert("Email Enviado")}
-              >
-                Enviar
-              </div>
-              <div
-                id="template-button"
-                className="add-button"
-                onClick={() => this.setState(e => ({ template: !e.template }))}
-              >
-                {this.state.template ? "Texto" : "Template"}
->>>>>>> 6bc0805390cf2a9b0f7614ba871f7d223fb897c3
               </div>
             )}
           </div>
