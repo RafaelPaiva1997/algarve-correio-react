@@ -25,6 +25,10 @@ export default class NavBar extends Component {
           label="Enviar Email"
           onClick={() => this.setState(e => ({ sending: !e.sending }))}
         />
+        <NavButton
+          label="Logout"
+          onClick={() => this.props.setUser({}, false)}
+        />
         {this.state.sending && (
           <SendMail updateSending={e => this.setState({ sending: e })} />
         )}

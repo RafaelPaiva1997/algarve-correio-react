@@ -11,7 +11,7 @@
 
 .red-legend {
     color: var(--text-blue);
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 3px;
 }
 
@@ -40,11 +40,11 @@
 .big-input {
     width: 250px !important;
     height: 20px !important;
-    font-size: 11px !important;
+    font-size: 13px !important;
 }
 
 .big-legend {
-    font-size: 12px !important;
+    font-size: 18px !important;
 }
 
 #controlled-form,
@@ -65,7 +65,7 @@
 
 .add-button {
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 15px;
     font-family: dark;
     margin: 0.5vw;
     padding: 0.6vw;
@@ -90,7 +90,7 @@
     font-family: light, sans-serif !important;
     width: 170px !important;
     height: 30px !important;
-    font-size: 10px !important;
+    font-size: 15px !important;
     padding: 5px !important;
     box-shadow: var(--shadow-blue) 3px 5px !important;
     outline: none;

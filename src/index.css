@@ -31,12 +31,12 @@ body {
 
 input::placeholder, textarea::placeholder {
     font-family: light, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 input, textarea {
     font-family: light, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     padding: 2px;
     padding-top: 1px;
 }

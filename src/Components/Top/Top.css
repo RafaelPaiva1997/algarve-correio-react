@@ -33,3 +33,32 @@
 #detalhes-email {
     font-size: 20px;
 }
+
+#login {
+    padding: 1vw;
+    border: solid 0.1vw var(--text-blue);
+    border-radius: 1vw;
+    background: var(--text-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+}
+
+#login-logo {
+    min-height: 70px;
+    height: 5vw;
+    margin: 1vw;
+    margin-top: 0;
+}
+
+.background-block {
+    background: var(--transparent-black);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
