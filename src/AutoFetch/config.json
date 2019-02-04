@@ -1,4 +1,4 @@
 {
-    "url": "http://127.0.0.1:8080/api",
-    "login": "http://127.0.0.1:8080/login"
+    "url": "https://thawing-cliffs-93872.herokuapp.com/api",
+    "login": "https://thawing-cliffs-93872.herokuapp.com/login"
 }

@@ -24,7 +24,7 @@ export default class SendMail extends React.Component {
 
   send() {
     var data = {
-      from: "rafael@paiva.it",
+      from: "noreply@marketing.metalpro.pt",
       to: this.state.mailingList,
       subject: this.subject.current.getValue(),
       text: this.email.current.getValue()
@@ -33,8 +33,8 @@ export default class SendMail extends React.Component {
     if (this.state.template) data.html = this.template.current.innerHTML;
 
     this.setState({ loading: true });
-    AutoFetch.post("emails", "bulkMail", data, e => {
-      alert(JSON.stringify(e));
+    AutoFetch.post_code("emails", "bulkMail", data, e => {
+      alert("Email Enviado!");
       this.setState({ loading: false });
     });
   }
@@ -106,4 +106,4 @@ export default class SendMail extends React.Component {
 }
 
 var template =
-  '<div style="width: 500px; height: 500px; background-color: #d6ae10; overflow: hidden;"><div style="display: flex; background-color: white; width: 500px; height: 20%; padding-left: 4%;"><img style="height:100%;" src="https://www.metalpro.pt/img/metalpro.png?1545522387" /></div><div style="margin-top: 6.5%; margin-left: 6%; height: 65%; width: 85%; background-color: white; font-family: sans-serif; font-size: 12px; padding: 7px; border-radius: 10px; outline: none; text-align:justify;" contenteditable="true"><div style="font-size: 16px; text-align: center; width=100%;">Título</div><div></br></div><div></br></div>Escreva aqui<div></br></div><div></br></div><div style="width: 100%; text-align: center;"><a href="http://metal-pro.surge.sh/emailverify/rafael@paiva.its" style="color: #d6ae10; text-align: center;">Carregue aqui para validar os seus dados.</a></div></div></div>';
+  '<div style="width: 500px; height: 500px; background-color: #d6ae10; overflow: hidden;"><div style="display: flex; background-color: white; width: 500px; height: 20%; padding-left: 4%;"><img style="height:100%;" src="https://www.metalpro.pt/img/metalpro.png?1545522387" /></div><div style="margin-top: 6.5%; margin-left: 6%; height: 65%; width: 85%; background-color: white; font-family: sans-serif; font-size: 12px; padding: 7px; border-radius: 10px; outline: none; text-align:justify;" contenteditable="true"><div style="font-size: 16px; text-align: center; width=100%;">Título</div><div></br></div><div></br></div>Escreva aqui<div></br></div><div></br></div><div style="width: 100%; text-align: center;"><a href="http://metalpro-newsletter.surge.sh/" style="color: #d6ae10; text-align: center;">Carregue aqui para validar os seus dados.</a></div></div></div>';
